@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "ant-in-giant Borderify",
+    "version": "1.0",
+   
+    "description": "Adds a solid blue border to all webpages matching ant-in-giant.work.",
+    
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.ant-in-giant.work/*"],
+        "js": ["borderify.js"]
+      }
+    ]
+  
+  }
